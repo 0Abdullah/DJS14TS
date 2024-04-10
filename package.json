@@ -1,0 +1,33 @@
+{
+	"$schema": "https://json.schemastore.org/package.json",
+	"name": "discord-bot",
+	"version": "0.1.0",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"build": "tsc",
+		"lint": "prettier --check . && eslint --ext .ts --format=pretty src",
+		"deploy": "node --require dotenv/config dist/util/deploy.js",
+		"format": "prettier --write . && eslint --ext .ts --fix --format=pretty src",
+		"start": "node --require dotenv/config dist/index.js"
+	},
+	"dependencies": {
+		"@discordjs/core": "^1.1.0",
+		"@discordjs/rest": "^2.2.0",
+		"better-sqlite3": "^9.4.5",
+		"discord-api-types": "^0.37.79",
+		"discord.js": "^14.14.0",
+		"dotenv": "^16.3.1",
+		"drizzle-orm": "^0.30.7"
+	},
+	"devDependencies": {
+		"@sapphire/ts-config": "^5.0.0",
+		"@types/node": "^18.18.8",
+		"drizzle-kit": "^0.20.14",
+		"eslint": "^8.53.0",
+		"eslint-config-neon": "^0.1.57",
+		"eslint-formatter-pretty": "^5.0.0",
+		"prettier": "^3.0.3",
+		"typescript": "^5.2.2"
+	}
+}
