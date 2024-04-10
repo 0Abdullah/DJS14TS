@@ -1,7 +1,6 @@
 import process from 'node:process';
 import { URL } from 'node:url';
 import { Client, GatewayIntentBits } from 'discord.js';
-import { Sequelize } from 'sequelize';
 import { loadCommands, loadEvents } from './util/loaders.js';
 import { registerEvents } from './util/registerEvents.js';
 
@@ -19,5 +18,4 @@ registerEvents(commands, events, client);
 
 
 // Login to the client
-const str = await client.login(process.env.DISCORD_TOKEN);
-console.log(str)
+await client.login(process.env.DISCORD_TOKEN);
