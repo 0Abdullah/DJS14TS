@@ -10,11 +10,9 @@
 		"dev": "concurrently pnpm:build:watch pnpm:start:watch",
 		"lint": "eslint --ext .ts --fix",
 		"lint:check": "eslint --ext .ts",
-		"deploy": "node --require dotenv/config dist/util/deploy.js",
+		"deploy-commands": "pnpm run build && node --require dotenv/config dist/util/deploy.js",
 		"start": "node --require dotenv/config dist/index.js",
-		"start:watch": "node --watch --require dotenv/config dist/index.js",
-		"rebuild": "pnpm run build && pnpm run start",
-		"redeploy": "pnpm run build && pnpm run deploy"
+		"start:watch": "node --watch --require dotenv/config dist/index.js"
 	},
 	"dependencies": {
 		"@discordjs/core": "^1.1.0",
