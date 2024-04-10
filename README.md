@@ -1,5 +1,5 @@
 # Discord JS v14 Bot Template, with full TypeScript support and Drizzle ORM
-A modified version of the [Official create-discord-bot Template](https://github.com/discordjs/discord.js/tree/main/packages/create-discord-bot), with repo fixes and a Database ORM included ([Drizzle ORM](https://orm.drizzle.team/)).
+A modified version of the [create-discord-bot](https://github.com/discordjs/discord.js/tree/main/packages/create-discord-bot), with repo fixes and `eslint-plugin-prettier` and a Database ORM included ([Drizzle ORM](https://orm.drizzle.team/)).
 
 # Cloning the repository
 ```bash
